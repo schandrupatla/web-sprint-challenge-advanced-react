@@ -16,6 +16,7 @@ state = {
   componentDidMount() {
     axios.get('http://localhost:3333/plants')
       .then(res => {
+        console.log("Res:",res.data);
         this.setState({
           plants:res.data
         });
